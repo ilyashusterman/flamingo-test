@@ -6,7 +6,7 @@ import EmailComposition from './EmailComposition';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/flamingo-test">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/questionnaire" element={<QuestionnaireForm />} />
