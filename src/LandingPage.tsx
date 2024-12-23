@@ -24,7 +24,7 @@ const LandingPage: React.FC = () => {
   // Render UI
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white">
-      <h1 className="text-4xl font-bold text-center">
+      <h1 className="text-4xl font-bold mb-4">
         The government must step up and meet us where we stand, addressing our society's needs today!
       </h1>
       <p className="mb-4 text-xl">

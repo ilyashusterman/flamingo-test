@@ -1,10 +1,10 @@
 // import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
-
+const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSe72xAyrxbVRWywoglomupqUQ8eYLaMZ-n1l2sIIKNzt8uySg/viewform?embedded=true";
 function Form() {
 //   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
 //   const handleLoginSuccess = (credentialResponse) => {
 //     console.log("Login successful!", credentialResponse);
@@ -27,24 +27,18 @@ function Form() {
     //         />
     //       </div>
     //     ) : (
-          <div>
-            <button
-              onClick={() => navigate(-1)}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 mb-4"
-            >
-              Go Back
-            </button>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSe72xAyrxbVRWywoglomupqUQ8eYLaMZ-n1l2sIIKNzt8uySg/viewform?embedded=true"
-              width={640}
-              height={1869}
-              frameBorder={0}
-              marginHeight={0}
-              marginWidth={0}
-            >
-              Loading…
-            </iframe>
-          </div>
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center px-4">
+      <div className="w-full max-w-3xl bg-white p-4 rounded-lg shadow-lg">
+        <iframe
+          src={FORM_URL}
+          title="Google Form"
+          className="w-full h-[75vh] border-0"
+          allowFullScreen
+        >
+          Loading…
+        </iframe>
+      </div>
+    </div>
     //     )}
     //   </div>
     // </GoogleOAuthProvider>
