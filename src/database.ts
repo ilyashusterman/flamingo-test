@@ -80,8 +80,10 @@ export const fetchSpreadSheetJson = async (
 
 export const totalResponses = async (): Promise<number> => {
   const responses = await fetchSpreadSheetJson(
-    "11kcoZT3wo_sQuu1mNYszGRNpvYF8U4L782dgDqd18yc",
-    "701568104"
+    // "11kcoZT3wo_sQuu1mNYszGRNpvYF8U4L782dgDqd18yc",
+    // "701568104"
+    "1se1gwLwWqaJmpOzsoKsvo-pfWaEijuAY78KxW0sqYcg",
+    "636876432"
   );
   return responses.length;
 };
